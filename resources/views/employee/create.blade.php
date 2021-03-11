@@ -1,6 +1,6 @@
 @extends('layouts.admin_layout')
 
-@section('title', 'Create company')
+@section('title', 'Create employee')
 
 @section('custom-css')
 
@@ -11,7 +11,7 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1 class="m-0">Company create</h1>
+                    <h1 class="m-0">Employee create</h1>
                 </div>
             </div>
             @if (session('success'))
@@ -30,7 +30,7 @@
                     <h3 class="card-title">Quick Example</h3>
                 </div>
 
-                <form action="{{ route('company.store') }}" method="POST">
+                <form action="{{ route('employee.store') }}" method="POST">
                     @csrf
                     <div class="card-body">
                         <div class="form-group">
@@ -38,16 +38,16 @@
                             <input type="text" name="name" class="form-control" id="exampleInputName1" placeholder="Name">
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Email</label>
-                            <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                            <label for="exampleInputEmail1">Surname</label>
+                            <input type="text" name="surname" class="form-control" id="exampleInputSurname1" placeholder="Surname">
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputLogo1">Logo</label>
-                            <input type="text" name="logo" class="form-control" id="exampleInputLogo1" placeholder="Logo">
+                            <label for="exampleInputLogo1">Email</label>
+                            <input type="email" name="emali" class="form-control" id="exampleInputEmail1" placeholder="Email">
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputWebsite1">Website</label>
-                            <input type="text" name="website" class="form-control" id="exampleInputWebsite1" placeholder="Website">
+                            <label for="exampleInputWebsite1">Phone</label>
+                            <input type="text" name="phone" class="form-control" id="exampleInputPhone1" placeholder="Phone">
                         </div>
                     </div>
 

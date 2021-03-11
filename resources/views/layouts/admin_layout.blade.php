@@ -65,19 +65,19 @@
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>
-                            Employeers
+                            Employees
                             <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <p>Companies</p>
+                            <a href="{{route('employee.index')}}" class="nav-link">
+                                <p>All employeers</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <p>Employeers</p>
+                            <a href="{{route('employee.create')}}" class="nav-link">
+                                <p>Create employee</p>
                             </a>
                         </li>
                     </ul>
@@ -104,6 +104,7 @@
     <script src="/admin_lte/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- AdminLTE App -->
     <script src="/admin_lte/dist/js/adminlte.min.js"></script>
+    <script src="/admin_lte/admin.js"></script>
     @yield('custom-js')
 </body>
 </html>
